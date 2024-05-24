@@ -207,12 +207,10 @@ def download_google_apk(storage, handle, tmp_dir, apk_name, apk_tmp):
             "google-play",
             "-a",
             handle,
-            "-u",
-            settings.GOOGLE_ACCOUNT_USERNAME,
-            "-p",
-            settings.GOOGLE_ACCOUNT_PASSWORD,
-            "-o",
-            "device=walleye",
+            "-e",
+            settings.GOOGLE_ACCOUNT_EMAIL,
+            "-t",
+            settings.GOOGLE_ACCOUNT_AAS_TOKEN,
             tmp_dir
         ], env=os.environ.copy())
 
