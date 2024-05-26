@@ -267,8 +267,8 @@ The following options can be configured in `exodus/exodus/settings/`:
 | ANALYSIS_REQUESTS_KEEP_DURATION     | Requests keep duration (in days)             | 4               |
 | ALLOW_APK_UPLOAD                    | Whether to allow APK file upload             | False           |
 | DISABLE_SUBMISSIONS                 | Whether to disable app submissions           | False           |
-| GOOGLE_ACCOUNT_USERNAME             | Username for Google account to download apps | /               |
-| GOOGLE_ACCOUNT_PASSWORD             | Password for Google account to download apps | /               |
+| GOOGLE_ACCOUNT_EMAIL                | Email of Google account to download apps     | /               |
+| GOOGLE_ACCOUNT_AAS_TOKEN            | AAS token of Google account to download apps | /               |
 
 ## Analyzing an application
 
