@@ -1,6 +1,12 @@
 {% extends "base/base.html" %}
 {% load i18n %}
 {% load static %}
+{% block head %}
+  <meta property="og:description" content="{% trans "We know it is not easy to find alternatives in order to escape trackers within our apps. We prepared a list of tools and things you can do to better manage your privacy on your smartphone." %}">
+  <meta name="description" content="{% trans "We know it is not easy to find alternatives in order to escape trackers within our apps. We prepared a list of tools and things you can do to better manage your privacy on your smartphone." %}">
+  <meta property="og:title" content="{% trans "What's next?" %}">
+  <title>{% trans "What's next?" %} - εxodus</title>
+{% endblock %}
 {% block content %}
   <div class="row justify-content-sm-center">
     <div class="col-md-8 col-12 text-center mb-4">
