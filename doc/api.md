@@ -4,7 +4,7 @@
 
 > **This API is provided as is and Exodus Privacy or its members could not be responsive in any case.**
 
-This API is limited to 30 requests/second (with a 50 requests burst).
+This API is globally limited to 30 requests/second (with a 50 requests burst). Some endpoints have stricter limits, please read each endpoint documentation.
 
 :warning: If the previous limit is exceeded too many times, we will ban the originating IP address for a specific period of time.
 
@@ -58,6 +58,10 @@ The API is served by the URL <https://reports.exodus-privacy.eu.org/>
   }
 }
 ```
+
+Limit: 3 requests/IP per minute.
+
+The result of this endpoint does not change often.
 
 #### Get the number of trackers
 
