@@ -19,6 +19,7 @@ To do so, please send an email specifying:
 * a username
 * an email address (in order to tell you if something wrong has been done with your key)
 * a short description of your project
+* the IP address with which you will make the requests if it's a static one (to avoid blocking)
 * if you need more than 30 requests/second rate
 
 Send your request to [api@exodus-privacy.eu.org](mailto:api@exodus-privacy.eu.org). Then, you will receive your API key.
@@ -30,6 +31,12 @@ For clients to authenticate, the API key should be included in the `Authorizatio
 ```sh
 Authorization: Token 9944b09199c62bcf9418ad846dd0e4bbdfc6ee4b
 ```
+
+#### User Agent
+
+Because we can ban some default user agents of specific tools, please set your user agent to something related to your username.
+
+We recommend a syntax like `<username>/<version>`. For example, if your username is `i-hate-ai`, you can set your user agent to `i-hate-ai/1.0`.
 
 ## API endpoints
 
